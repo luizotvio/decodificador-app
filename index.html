@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="assets/js/app.js" defer></script>
     <title>Decodificador</title>
 </head>
 <body>
     <header class="logo">
-        <img class="logo__img" src="" alt="Logo App">
+        <img class="logo__img" src="assets/images/Top.svg" alt="Logo App">
     </header>
     <main>
         <section class="container-input">
-            <textarea id="text-input" placeholder="Digite seu texto"></textarea>
-            <span class="container-input__aviso">Apenas letras minúsculas e sem acento.</span>
-            <div class="container-input__btns">
-                <button>Criptografar</button>
-                <button>Descriptografar</button>
+            <textarea class="container-input__text" id="text-input" placeholder="Digite seu texto"></textarea>
+            <span class="container-input__aviso"><ion-icon name="alert-circle-outline"></ion-icon> Apenas letras minúsculas e sem acento.</span>
+            <div class="container-input__btn">
+                <button class="container-input__btn__cripto">Criptografar</button>
+                <button class="container-input__btn__descripto">Descriptografar</button>
             </div>
         </section>
         <section class="container-output">

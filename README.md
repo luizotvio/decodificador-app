@@ -12,6 +12,7 @@
 
 - **HTML:** Estrutura básica da aplicação.
 - **CSS:** Estilização da interface para uma experiência de usuário agradável.
+- **Ionicons:** Framework de ícones
 - **JavaScript:** Implementação da lógica de criptografia, descriptografia e funcionalidades de interação com o DOM.
 
 ## Deploy da Aplicação

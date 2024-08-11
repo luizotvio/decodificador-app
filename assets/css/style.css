@@ -43,6 +43,7 @@ main {
 
 .container-input {
     width: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -107,6 +108,10 @@ main {
     text-align: center;
     box-shadow: 0 24px 32px #00000046;
 }
+.container-output__image {
+    width: 100%;
+    display: none;
+}
 .container-output__title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -128,4 +133,37 @@ main {
     margin-top: 32px;
     padding: 24px;
     cursor: pointer;
+}
+
+@media screen and (min-width: 600px){
+    .logo__img  {
+        padding-left: 40px;
+    }
+    .container-input__btn {
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    main {
+        flex-direction: row;
+        padding: 0 40px;
+        gap: 5rem;
+    }
+    .container-input {
+        width: 60%;
+    }
+    .container-input__text {
+        height: 500px;
+    }
+
+    .container-output {
+        width: 30%;
+        height: 700px;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .container-output__image {
+       display: block;
+    }
 }

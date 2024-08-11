@@ -3,6 +3,8 @@ const responseText = document.querySelector('.container-output__response');
 const titleResponse = document.querySelector('.container-output__title');
 const btnCripto = document.querySelector('.container-input__btn__cripto');
 const btnDescripto = document.querySelector('.container-input__btn__descripto');
+const containerOutput = document.querySelector('.container-output');
+const image = document.querySelector('.container-output__image');
 const btnCopy = document.getElementById('copy');
 
 function criptografar(texto) {
@@ -27,8 +29,11 @@ btnCripto.addEventListener('click', () => {
     const textoCripto = criptografar(contentText.value);
     responseText.textContent = textoCripto;
     responseText.style.fontSize = '2rem';
+    image.style.display = 'none'
     titleResponse.style.display = 'none';
+    containerOutput.style.justifyContent = 'space-between'
     btnCopy.style.display = 'block';
+    btnCopy.textContent = 'Copiar'
     contentText.value = '';
 })
 
@@ -63,5 +68,6 @@ btnDescripto.addEventListener('click', () => {
 btnCopy.addEventListener('click', function () {
     const responseText = document.querySelector('.container-output__response');
     navigator.clipboard.writeText(responseText.textContent);
+    responseText.textContent = '';
     btnCopy.textContent = 'Copiado!'
 })
